@@ -362,6 +362,7 @@ INSERT INTO `AssetDisplayPageEntry` VALUES ('e396f895-2a9e-dea6-f1d2-7ccd1983dfd
 INSERT INTO `AssetDisplayPageEntry` VALUES ('f3b6d12e-8a8d-b61e-cb58-4e8dbd9a8dc9',34291,20126,20099,20139,'Test Test','2019-10-29 13:17:47.858000','2019-10-29 13:17:47.858000',30733,34282,0,1);
 INSERT INTO `AssetDisplayPageEntry` VALUES ('f3bc96d6-9c63-e1d6-358b-4a8480e7660d',34304,20126,20099,20139,'Test Test','2019-10-29 13:21:03.301000','2019-10-29 13:21:03.301000',30733,34295,0,1);
 INSERT INTO `AssetDisplayPageEntry` VALUES ('536a2dc4-f56f-16ad-b6b5-a72b5bcedb37',34532,20126,20099,20139,'Test Test','2019-10-30 09:04:01.661000','2019-10-30 09:04:01.661000',30733,34523,0,1);
+INSERT INTO `AssetDisplayPageEntry` VALUES ('fe563c29-9609-5515-054c-cc80d230bf8c',34545,20126,20099,20139,'Test Test','2019-10-30 09:09:59.848000','2019-10-30 09:09:59.848000',30733,34536,0,1);
 /*!40000 ALTER TABLE `AssetDisplayPageEntry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -494,6 +495,7 @@ INSERT INTO `AssetEntry` VALUES (34006,20126,20099,20139,'Test Test','2019-10-29
 INSERT INTO `AssetEntry` VALUES (34288,20126,20099,20139,'Test Test','2019-10-29 13:17:46.401000','2019-10-29 13:17:46.721000',30733,34282,'e420485c-558e-b9b5-1acd-932cde0cf1a3',33668,1,1,NULL,NULL,'2019-10-29 13:17:00.000000',NULL,'text/html','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Title language-id=\"en_US\">WebContent01</Title></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>WebContent01&lt;/p></Description></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>WebContent01&lt;/p></Description></root>',NULL,NULL,0,0,0,0);
 INSERT INTO `AssetEntry` VALUES (34301,20126,20099,20139,'Test Test','2019-10-29 13:21:03.054000','2019-10-29 13:21:03.161000',30733,34295,'c81dbe52-a278-2692-5d0d-df4c7b56108c',33668,1,1,NULL,NULL,'2019-10-29 13:20:00.000000',NULL,'text/html','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Title language-id=\"en_US\">WebContentNew</Title></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>WebContentNew&lt;/p></Description></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>WebContentNew&lt;/p></Description></root>',NULL,NULL,0,0,0,0);
 INSERT INTO `AssetEntry` VALUES (34529,20126,20099,20139,'Test Test','2019-10-30 09:03:59.837000','2019-10-30 09:04:00.226000',30733,34523,'93e15eb1-eac0-d56a-a76e-5194df8187aa',33668,1,1,NULL,NULL,'2019-10-30 09:03:00.000000',NULL,'text/html','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Title language-id=\"en_US\">New BasicWebContent</Title></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>New BasicWebContent&lt;/p></Description></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>New BasicWebContent&lt;/p></Description></root>',NULL,NULL,0,0,0,0);
+INSERT INTO `AssetEntry` VALUES (34542,20126,20099,20139,'Test Test','2019-10-30 09:09:59.618000','2019-10-30 09:09:59.720000',30733,34536,'bcf125f1-6415-6d09-d95c-3688a5f83a37',33668,1,1,NULL,NULL,'2019-10-30 09:09:00.000000',NULL,'text/html','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Title language-id=\"en_US\">MyFirstWebContent</Title></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>MyFirstWebContent&lt;/p></Description></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>MyFirstWebContent&lt;/p></Description></root>',NULL,NULL,0,0,0,0);
 /*!40000 ALTER TABLE `AssetEntry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2342,6 +2344,7 @@ INSERT INTO `DDMStorageLink` VALUES ('65275a2c-d768-ee4b-37e2-ca375115cd31',3400
 INSERT INTO `DDMStorageLink` VALUES ('3997d491-7048-537d-4c97-376a0714f737',34289,20099,30733,34281,0,33668);
 INSERT INTO `DDMStorageLink` VALUES ('747b50d1-74fe-9912-8272-98acc0209a3a',34302,20099,30733,34294,0,33668);
 INSERT INTO `DDMStorageLink` VALUES ('e60e4dd3-24bd-97e6-8751-1c14c4d0172e',34530,20099,30733,34522,0,33668);
+INSERT INTO `DDMStorageLink` VALUES ('452857b6-5175-5193-02ba-d5525dcba33f',34543,20099,30733,34535,0,33668);
 /*!40000 ALTER TABLE `DDMStorageLink` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2684,6 +2687,7 @@ INSERT INTO `DDMTemplateLink` VALUES (34008,20099,30733,33996,33671);
 INSERT INTO `DDMTemplateLink` VALUES (34290,20099,30733,34281,33671);
 INSERT INTO `DDMTemplateLink` VALUES (34303,20099,30733,34294,33671);
 INSERT INTO `DDMTemplateLink` VALUES (34531,20099,30733,34522,33671);
+INSERT INTO `DDMTemplateLink` VALUES (34544,20099,30733,34535,33671);
 /*!40000 ALTER TABLE `DDMTemplateLink` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3143,11 +3147,12 @@ LOCK TABLES `DLFolder` WRITE;
 /*!40000 ALTER TABLE `DLFolder` DISABLE KEYS */;
 INSERT INTO `DLFolder` VALUES ('9882118d-e460-7e2c-db28-7d168e002f86',33605,20135,20099,20103,NULL,'2019-10-29 11:38:10.756000','2019-10-29 11:38:10.756000',33604,1,0,'/33605/','com.liferay.oauth2.provider',NULL,'2019-10-29 11:38:10.900000',0,1,0,NULL,0,0,NULL,NULL);
 INSERT INTO `DLFolder` VALUES ('c6f60a46-9e3b-3c72-6a3c-5e8cd6256592',33608,20135,20099,20103,NULL,'2019-10-29 11:38:10.901000','2019-10-29 11:38:10.901000',33604,0,33605,'/33605/33608/','icons',NULL,'2019-10-29 11:38:11.204000',0,0,0,NULL,0,0,NULL,NULL);
-INSERT INTO `DLFolder` VALUES ('cb0a74fb-1733-4915-5b1f-7cc968adb610',33999,20126,20099,20103,NULL,'2019-10-29 12:20:01.401000','2019-10-29 12:20:01.401000',33998,1,0,'/33999/','com.liferay.journal',NULL,'2019-10-30 09:03:59.734000',0,1,0,NULL,0,0,NULL,NULL);
+INSERT INTO `DLFolder` VALUES ('cb0a74fb-1733-4915-5b1f-7cc968adb610',33999,20126,20099,20103,NULL,'2019-10-29 12:20:01.401000','2019-10-29 12:20:01.401000',33998,1,0,'/33999/','com.liferay.journal',NULL,'2019-10-30 09:09:59.607000',0,1,0,NULL,0,0,NULL,NULL);
 INSERT INTO `DLFolder` VALUES ('a32f3d9e-7683-28e5-309e-74b9433e9664',34000,20126,20099,20139,'Test Test','2019-10-29 12:20:01.559000','2019-10-29 12:20:01.559000',33998,0,33999,'/33999/34000/','33997',NULL,'2019-10-29 12:20:01.551000',0,0,0,NULL,0,0,NULL,NULL);
 INSERT INTO `DLFolder` VALUES ('cac040ae-0692-4fc2-a1a4-98b80a8a5341',34283,20126,20099,20139,'Test Test','2019-10-29 13:17:46.342000','2019-10-29 13:17:46.342000',33998,0,33999,'/33999/34283/','34282',NULL,'2019-10-29 13:17:46.319000',0,0,0,NULL,0,0,NULL,NULL);
 INSERT INTO `DLFolder` VALUES ('5f0326bf-91d5-0dac-9c0f-e07136357011',34296,20126,20099,20139,'Test Test','2019-10-29 13:21:03.046000','2019-10-29 13:21:03.046000',33998,0,33999,'/33999/34296/','34295',NULL,'2019-10-29 13:21:03.044000',0,0,0,NULL,0,0,NULL,NULL);
 INSERT INTO `DLFolder` VALUES ('9dc88ce5-e191-b115-fc9d-89cd16290b42',34524,20126,20099,20139,'Test Test','2019-10-30 09:03:59.753000','2019-10-30 09:03:59.753000',33998,0,33999,'/33999/34524/','34523',NULL,'2019-10-30 09:03:59.734000',0,0,0,NULL,0,0,NULL,NULL);
+INSERT INTO `DLFolder` VALUES ('0a15f74b-770a-a60b-49d3-65a06b552979',34537,20126,20099,20139,'Test Test','2019-10-30 09:09:59.609000','2019-10-30 09:09:59.609000',33998,0,33999,'/33999/34537/','34536',NULL,'2019-10-30 09:09:59.607000',0,0,0,NULL,0,0,NULL,NULL);
 /*!40000 ALTER TABLE `DLFolder` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3548,6 +3553,7 @@ INSERT INTO `FriendlyURLEntry` VALUES (0,'93a45c45-8901-bb9e-cbb3-c2618fd154f7',
 INSERT INTO `FriendlyURLEntry` VALUES (0,'db54afe3-a6f2-a438-5119-f9953ac93647','en_US',34286,20126,20099,'2019-10-29 13:17:46.450000','2019-10-29 13:17:46.450000',30733,34282);
 INSERT INTO `FriendlyURLEntry` VALUES (0,'3647e28f-9219-e80f-6167-ff2e95ef2a87','en_US',34299,20126,20099,'2019-10-29 13:21:03.067000','2019-10-29 13:21:03.067000',30733,34295);
 INSERT INTO `FriendlyURLEntry` VALUES (0,'a2e8ec90-f446-c9ae-0b5a-a438f976bd4a','en_US',34527,20126,20099,'2019-10-30 09:03:59.915000','2019-10-30 09:03:59.915000',30733,34523);
+INSERT INTO `FriendlyURLEntry` VALUES (0,'257f346e-3a66-c103-0af1-d50c0438bac7','en_US',34540,20126,20099,'2019-10-30 09:09:59.632000','2019-10-30 09:09:59.632000',30733,34536);
 /*!40000 ALTER TABLE `FriendlyURLEntry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3584,6 +3590,7 @@ INSERT INTO `FriendlyURLEntryLocalization` VALUES (0,1,20099,34004,'en_US','webc
 INSERT INTO `FriendlyURLEntryLocalization` VALUES (0,101,20099,34286,'en_US','webcontent01',20126,30733,34282);
 INSERT INTO `FriendlyURLEntryLocalization` VALUES (0,102,20099,34299,'en_US','webcontentnew',20126,30733,34295);
 INSERT INTO `FriendlyURLEntryLocalization` VALUES (0,201,20099,34527,'en_US','new-basicwebcontent',20126,30733,34523);
+INSERT INTO `FriendlyURLEntryLocalization` VALUES (0,202,20099,34540,'en_US','myfirstwebcontent',20126,30733,34536);
 /*!40000 ALTER TABLE `FriendlyURLEntryLocalization` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3615,6 +3622,7 @@ INSERT INTO `FriendlyURLEntryMapping` VALUES (0,34003,30733,33997,34004);
 INSERT INTO `FriendlyURLEntryMapping` VALUES (0,34285,30733,34282,34286);
 INSERT INTO `FriendlyURLEntryMapping` VALUES (0,34298,30733,34295,34299);
 INSERT INTO `FriendlyURLEntryMapping` VALUES (0,34526,30733,34523,34527);
+INSERT INTO `FriendlyURLEntryMapping` VALUES (0,34539,30733,34536,34540);
 /*!40000 ALTER TABLE `FriendlyURLEntryMapping` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3948,6 +3956,7 @@ INSERT INTO `JournalArticle` VALUES ('f96bf05b-72a9-3c22-4324-4dad5dddbb18',3399
 INSERT INTO `JournalArticle` VALUES ('0c6b2d63-e8d4-5b95-2eab-4086d7f9230d',34281,34282,20126,20099,20139,'Test Test','2019-10-29 13:17:46.401000','2019-10-29 13:17:46.692000',0,0,0,'/','34280',1,'webcontent01','<?xml version=\"1.0\"?>\n\n<root available-locales=\"en_US\" default-locale=\"en_US\">\n	<dynamic-element name=\"content\" type=\"text_area\" index-type=\"text\" instance-id=\"xyey\">\n		<dynamic-content language-id=\"en_US\"><![CDATA[]]></dynamic-content>\n	</dynamic-element>\n</root>','BASIC-WEB-CONTENT','BASIC-WEB-CONTENT','en_US',NULL,'2019-10-29 13:17:00.000000',NULL,NULL,1,0,34284,NULL,NULL,0,20139,'Test Test','2019-10-29 13:17:46.692000');
 INSERT INTO `JournalArticle` VALUES ('65672a83-c537-05c2-0116-baa4716d0f3c',34294,34295,20126,20099,20139,'Test Test','2019-10-29 13:21:03.054000','2019-10-29 13:21:03.148000',0,0,0,'/','34293',1,'webcontentnew','<?xml version=\"1.0\"?>\n\n<root available-locales=\"en_US\" default-locale=\"en_US\">\n	<dynamic-element name=\"content\" type=\"text_area\" index-type=\"text\" instance-id=\"acmp\">\n		<dynamic-content language-id=\"en_US\"><![CDATA[]]></dynamic-content>\n	</dynamic-element>\n</root>','BASIC-WEB-CONTENT','BASIC-WEB-CONTENT','en_US',NULL,'2019-10-29 13:20:00.000000',NULL,NULL,1,0,34297,NULL,NULL,0,20139,'Test Test','2019-10-29 13:21:03.148000');
 INSERT INTO `JournalArticle` VALUES ('dbb8cc26-308a-f520-9199-47ba70b8059c',34522,34523,20126,20099,20139,'Test Test','2019-10-30 09:03:59.837000','2019-10-30 09:04:00.194000',0,0,0,'/','34521',1,'new-basicwebcontent','<?xml version=\"1.0\"?>\n\n<root available-locales=\"en_US\" default-locale=\"en_US\">\n	<dynamic-element name=\"content\" type=\"text_area\" index-type=\"text\" instance-id=\"kjwi\">\n		<dynamic-content language-id=\"en_US\"><![CDATA[<p>New BasicWebContent</p>]]></dynamic-content>\n	</dynamic-element>\n</root>','BASIC-WEB-CONTENT','BASIC-WEB-CONTENT','en_US',NULL,'2019-10-30 09:03:00.000000',NULL,NULL,1,0,34525,NULL,NULL,0,20139,'Test Test','2019-10-30 09:04:00.194000');
+INSERT INTO `JournalArticle` VALUES ('bd936354-d5d2-7da0-8ce0-2feec2131bf5',34535,34536,20126,20099,20139,'Test Test','2019-10-30 09:09:59.618000','2019-10-30 09:09:59.706000',0,0,0,'/','34534',1,'myfirstwebcontent','<?xml version=\"1.0\"?>\n\n<root available-locales=\"en_US\" default-locale=\"en_US\">\n	<dynamic-element name=\"content\" type=\"text_area\" index-type=\"text\" instance-id=\"krqw\">\n		<dynamic-content language-id=\"en_US\"><![CDATA[]]></dynamic-content>\n	</dynamic-element>\n</root>','BASIC-WEB-CONTENT','BASIC-WEB-CONTENT','en_US',NULL,'2019-10-30 09:09:00.000000',NULL,NULL,1,0,34538,NULL,NULL,0,20139,'Test Test','2019-10-30 09:09:59.706000');
 /*!40000 ALTER TABLE `JournalArticle` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3980,6 +3989,7 @@ INSERT INTO `JournalArticleLocalization` VALUES (34005,20099,33996,'WebContent1'
 INSERT INTO `JournalArticleLocalization` VALUES (34287,20099,34281,'WebContent01','<p>WebContent01</p>','en_US');
 INSERT INTO `JournalArticleLocalization` VALUES (34300,20099,34294,'WebContentNew','<p>WebContentNew</p>','en_US');
 INSERT INTO `JournalArticleLocalization` VALUES (34528,20099,34522,'New BasicWebContent','<p>New BasicWebContent</p>','en_US');
+INSERT INTO `JournalArticleLocalization` VALUES (34541,20099,34535,'MyFirstWebContent','<p>MyFirstWebContent</p>','en_US');
 /*!40000 ALTER TABLE `JournalArticleLocalization` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -4013,6 +4023,7 @@ INSERT INTO `JournalArticleResource` VALUES ('dcf92c6e-508b-8505-3a25-8f989f954c
 INSERT INTO `JournalArticleResource` VALUES ('e420485c-558e-b9b5-1acd-932cde0cf1a3',34282,20126,20099,'34280');
 INSERT INTO `JournalArticleResource` VALUES ('c81dbe52-a278-2692-5d0d-df4c7b56108c',34295,20126,20099,'34293');
 INSERT INTO `JournalArticleResource` VALUES ('93e15eb1-eac0-d56a-a76e-5194df8187aa',34523,20126,20099,'34521');
+INSERT INTO `JournalArticleResource` VALUES ('bcf125f1-6415-6d09-d95c-3688a5f83a37',34536,20126,20099,'34534');
 /*!40000 ALTER TABLE `JournalArticleResource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12226,6 +12237,12 @@ INSERT INTO `ResourcePermission` VALUES (0,1803,20099,'com.liferay.document.libr
 INSERT INTO `ResourcePermission` VALUES (0,1804,20099,'com.liferay.journal.model.JournalArticle',4,'34523',34523,20107,20139,511,1);
 INSERT INTO `ResourcePermission` VALUES (0,1805,20099,'com.liferay.journal.model.JournalArticle',4,'34523',34523,20114,0,257,1);
 INSERT INTO `ResourcePermission` VALUES (0,1806,20099,'com.liferay.journal.model.JournalArticle',4,'34523',34523,20106,0,257,1);
+INSERT INTO `ResourcePermission` VALUES (0,1807,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'34537',34537,20107,20139,511,1);
+INSERT INTO `ResourcePermission` VALUES (0,1808,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'34537',34537,20114,0,217,1);
+INSERT INTO `ResourcePermission` VALUES (0,1809,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'34537',34537,20106,0,1,1);
+INSERT INTO `ResourcePermission` VALUES (0,1810,20099,'com.liferay.journal.model.JournalArticle',4,'34536',34536,20107,20139,511,1);
+INSERT INTO `ResourcePermission` VALUES (0,1811,20099,'com.liferay.journal.model.JournalArticle',4,'34536',34536,20114,0,257,1);
+INSERT INTO `ResourcePermission` VALUES (0,1812,20099,'com.liferay.journal.model.JournalArticle',4,'34536',34536,20106,0,257,1);
 /*!40000 ALTER TABLE `ResourcePermission` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12589,6 +12606,7 @@ INSERT INTO `SocialActivity` VALUES (1,20126,20099,20139,1572351602110,34010,0,3
 INSERT INTO `SocialActivity` VALUES (101,20126,20099,20139,1572355066751,34292,0,30733,34282,0,0,1,'{\"title\":\"<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\\\"en_US\\\" default-locale=\\\"en_US\\\"><Title language-id=\\\"en_US\\\">WebContent01<\\/Title><\\/root>\"}',0);
 INSERT INTO `SocialActivity` VALUES (102,20126,20099,20139,1572355263185,34305,0,30733,34295,0,0,1,'{\"title\":\"<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\\\"en_US\\\" default-locale=\\\"en_US\\\"><Title language-id=\\\"en_US\\\">WebContentNew<\\/Title><\\/root>\"}',0);
 INSERT INTO `SocialActivity` VALUES (201,20126,20099,20139,1572426240267,34533,0,30733,34523,0,0,1,'{\"title\":\"<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\\\"en_US\\\" default-locale=\\\"en_US\\\"><Title language-id=\\\"en_US\\\">New BasicWebContent<\\/Title><\\/root>\"}',0);
+INSERT INTO `SocialActivity` VALUES (202,20126,20099,20139,1572426599729,34546,0,30733,34536,0,0,1,'{\"title\":\"<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\\\"en_US\\\" default-locale=\\\"en_US\\\"><Title language-id=\\\"en_US\\\">MyFirstWebContent<\\/Title><\\/root>\"}',0);
 /*!40000 ALTER TABLE `SocialActivity` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12732,6 +12750,7 @@ INSERT INTO `SocialActivitySet` VALUES (34010,20126,20099,20139,1572351602110,15
 INSERT INTO `SocialActivitySet` VALUES (34292,20126,20099,20139,1572355066751,1572355066751,30733,34282,1,NULL,1);
 INSERT INTO `SocialActivitySet` VALUES (34305,20126,20099,20139,1572355263185,1572355263185,30733,34295,1,NULL,1);
 INSERT INTO `SocialActivitySet` VALUES (34533,20126,20099,20139,1572426240267,1572426240267,30733,34523,1,NULL,1);
+INSERT INTO `SocialActivitySet` VALUES (34546,20126,20099,20139,1572426599729,1572426599729,30733,34536,1,NULL,1);
 /*!40000 ALTER TABLE `SocialActivitySet` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -13875,4 +13894,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-10-30 10:08:11
+-- Dump completed on 2019-10-30 10:10:18
