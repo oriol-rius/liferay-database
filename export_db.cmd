@@ -1,0 +1,1 @@
+mysqldump -uroot -p --skip-extended-insert lportal_model_dxp > %1
