@@ -1,1 +1,1 @@
-mysqldump -uroot -p --skip-extended-insert lportal_model_dxp > %1
+mysqldump -uroot -p --skip-extended-insert lportal_model_dxp > liferay-dxp-db.sql
