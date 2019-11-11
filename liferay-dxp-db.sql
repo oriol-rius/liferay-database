@@ -496,6 +496,7 @@ INSERT INTO `AssetEntry` VALUES (34288,20126,20099,20139,'Test Test','2019-10-29
 INSERT INTO `AssetEntry` VALUES (34301,20126,20099,20139,'Test Test','2019-10-29 13:21:03.054000','2019-10-29 13:21:03.161000',30733,34295,'c81dbe52-a278-2692-5d0d-df4c7b56108c',33668,1,1,NULL,NULL,'2019-10-29 13:20:00.000000',NULL,'text/html','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Title language-id=\"en_US\">WebContentNew</Title></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>WebContentNew&lt;/p></Description></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>WebContentNew&lt;/p></Description></root>',NULL,NULL,0,0,0,0);
 INSERT INTO `AssetEntry` VALUES (34529,20126,20099,20139,'Test Test','2019-10-30 09:03:59.837000','2019-10-30 09:04:00.226000',30733,34523,'93e15eb1-eac0-d56a-a76e-5194df8187aa',33668,1,1,NULL,NULL,'2019-10-30 09:03:00.000000',NULL,'text/html','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Title language-id=\"en_US\">New BasicWebContent</Title></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>New BasicWebContent&lt;/p></Description></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>New BasicWebContent&lt;/p></Description></root>',NULL,NULL,0,0,0,0);
 INSERT INTO `AssetEntry` VALUES (34542,20126,20099,20139,'Test Test','2019-10-30 09:09:59.618000','2019-10-30 09:25:06.862000',30733,34536,'bcf125f1-6415-6d09-d95c-3688a5f83a37',34548,1,1,NULL,NULL,'2019-10-30 09:09:00.000000',NULL,'text/html','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Title language-id=\"en_US\">MyFirstWebContent</Title></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>MyFirstWebContent&lt;/p></Description></root>','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Description language-id=\"en_US\">&lt;p>MyFirstWebContent&lt;/p></Description></root>',NULL,NULL,0,0,0,0);
+INSERT INTO `AssetEntry` VALUES (34725,20126,20099,20139,'Test Test','2019-11-11 09:02:23.832000','2019-11-11 09:02:23.832000',20009,34723,'5fb12e17-34b0-cf08-a015-685809e90f4f',0,1,1,NULL,NULL,'2019-11-11 09:02:23.832000',NULL,NULL,'Folder01','Folder01','',NULL,NULL,0,0,0,0);
 /*!40000 ALTER TABLE `AssetEntry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -659,6 +660,7 @@ CREATE TABLE `AssetVocabulary` (
 
 LOCK TABLES `AssetVocabulary` WRITE;
 /*!40000 ALTER TABLE `AssetVocabulary` DISABLE KEYS */;
+INSERT INTO `AssetVocabulary` VALUES ('45c11ddb-6fdf-a546-e222-6d080c2fa4f0',NULL,34722,20126,20099,20103,NULL,'2019-11-11 09:02:05.345000','2019-11-11 09:02:05.345000','Topic','<?xml version=\'1.0\' encoding=\'UTF-8\'?><root available-locales=\"en_US\" default-locale=\"en_US\"><Title language-id=\"en_US\">Topic</Title></root>',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `AssetVocabulary` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1598,7 +1600,7 @@ INSERT INTO `Counter` VALUES ('com.liferay.portal.kernel.model.Layout#33819#true
 INSERT INTO `Counter` VALUES ('com.liferay.portal.kernel.model.Layout#33832#true',1);
 INSERT INTO `Counter` VALUES ('com.liferay.portal.kernel.model.Layout#33842#true',2);
 INSERT INTO `Counter` VALUES ('com.liferay.portal.kernel.model.ResourceAction',3100);
-INSERT INTO `Counter` VALUES ('com.liferay.portal.kernel.model.ResourcePermission',1900);
+INSERT INTO `Counter` VALUES ('com.liferay.portal.kernel.model.ResourcePermission',2000);
 INSERT INTO `Counter` VALUES ('com.liferay.social.kernel.model.SocialActivity',300);
 /*!40000 ALTER TABLE `Counter` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -3164,6 +3166,7 @@ INSERT INTO `DLFolder` VALUES ('cac040ae-0692-4fc2-a1a4-98b80a8a5341',34283,2012
 INSERT INTO `DLFolder` VALUES ('5f0326bf-91d5-0dac-9c0f-e07136357011',34296,20126,20099,20139,'Test Test','2019-10-29 13:21:03.046000','2019-10-29 13:21:03.046000',33998,0,33999,'/33999/34296/','34295',NULL,'2019-10-29 13:21:03.044000',0,0,0,NULL,0,0,NULL,NULL);
 INSERT INTO `DLFolder` VALUES ('9dc88ce5-e191-b115-fc9d-89cd16290b42',34524,20126,20099,20139,'Test Test','2019-10-30 09:03:59.753000','2019-10-30 09:03:59.753000',33998,0,33999,'/33999/34524/','34523',NULL,'2019-10-30 09:03:59.734000',0,0,0,NULL,0,0,NULL,NULL);
 INSERT INTO `DLFolder` VALUES ('0a15f74b-770a-a60b-49d3-65a06b552979',34537,20126,20099,20139,'Test Test','2019-10-30 09:09:59.609000','2019-10-30 09:09:59.609000',33998,0,33999,'/33999/34537/','34536',NULL,'2019-10-30 09:09:59.607000',0,0,0,NULL,0,0,NULL,NULL);
+INSERT INTO `DLFolder` VALUES ('5fb12e17-34b0-cf08-a015-685809e90f4f',34723,20126,20099,20139,'Test Test','2019-11-11 09:02:23.832000','2019-11-11 09:02:23.832000',20126,0,0,'/34723/','Folder01','Folder01','2019-11-11 09:02:23.810000',0,0,0,NULL,0,0,NULL,NULL);
 /*!40000 ALTER TABLE `DLFolder` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3193,6 +3196,7 @@ CREATE TABLE `DLSyncEvent` (
 
 LOCK TABLES `DLSyncEvent` WRITE;
 /*!40000 ALTER TABLE `DLSyncEvent` DISABLE KEYS */;
+INSERT INTO `DLSyncEvent` VALUES (34724,20099,1573462943929,'add','folder',34723);
 /*!40000 ALTER TABLE `DLSyncEvent` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8266,6 +8270,7 @@ INSERT INTO `PortletPreferences` VALUES (0,33985,20099,0,3,20129,'com_liferay_si
 INSERT INTO `PortletPreferences` VALUES (0,33990,20099,20126,3,0,'com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet','<portlet-preferences />');
 INSERT INTO `PortletPreferences` VALUES (0,33991,20099,0,3,20129,'com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet','<portlet-preferences />');
 INSERT INTO `PortletPreferences` VALUES (0,33994,20099,0,3,20120,'com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet','<portlet-preferences />');
+INSERT INTO `PortletPreferences` VALUES (0,34721,20099,20126,2,0,'com_liferay_document_library_web_portlet_DLAdminPortlet','<portlet-preferences />');
 /*!40000 ALTER TABLE `PortletPreferences` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12262,6 +12267,11 @@ INSERT INTO `ResourcePermission` VALUES (0,1815,20099,'com.liferay.dynamic.data.
 INSERT INTO `ResourcePermission` VALUES (0,1816,20099,'com.liferay.dynamic.data.mapping.model.DDMTemplate-com.liferay.journal.model.JournalArticle',4,'34552',34552,20107,20139,15,1);
 INSERT INTO `ResourcePermission` VALUES (0,1817,20099,'com.liferay.dynamic.data.mapping.model.DDMTemplate-com.liferay.journal.model.JournalArticle',4,'34552',34552,20114,0,1,1);
 INSERT INTO `ResourcePermission` VALUES (0,1818,20099,'com.liferay.dynamic.data.mapping.model.DDMTemplate-com.liferay.journal.model.JournalArticle',4,'34552',34552,20106,0,1,1);
+INSERT INTO `ResourcePermission` VALUES (0,1901,20099,'com.liferay.asset.kernel.model.AssetVocabulary',4,'34722',34722,20107,20103,15,1);
+INSERT INTO `ResourcePermission` VALUES (0,1902,20099,'com.liferay.asset.kernel.model.AssetVocabulary',4,'34722',34722,20106,0,1,1);
+INSERT INTO `ResourcePermission` VALUES (0,1903,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'34723',34723,20107,20139,511,1);
+INSERT INTO `ResourcePermission` VALUES (0,1904,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'34723',34723,20114,0,217,1);
+INSERT INTO `ResourcePermission` VALUES (0,1905,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'34723',34723,20106,0,1,1);
 /*!40000 ALTER TABLE `ResourcePermission` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -13913,4 +13923,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-11 10:00:04
+-- Dump completed on 2019-11-11 10:03:15
