@@ -58,6 +58,8 @@ INSERT INTO `AMImageEntry` VALUES ('7db82b31-4137-9a19-5904-73c3d7f3b977',35409,
 INSERT INTO `AMImageEntry` VALUES ('b6cf2e11-5036-cffa-ebfe-de5c3c63bfde',35412,20126,20099,'2019-12-17 16:45:07.415000','Thumbnail-300x300',35403,'image/jpeg',225,300,14699);
 INSERT INTO `AMImageEntry` VALUES ('460bf5d9-39e8-c87d-4d6e-59bd911d12e3',35422,20126,20099,'2019-12-17 16:46:46.553000','Preview-1000x0',35414,'image/jpeg',600,800,72496);
 INSERT INTO `AMImageEntry` VALUES ('cfdc8a70-305a-3cb4-db51-8df0fcca444a',35423,20126,20099,'2019-12-17 16:46:46.871000','Thumbnail-300x300',35414,'image/jpeg',225,300,14699);
+INSERT INTO `AMImageEntry` VALUES ('acca731f-f6df-16f4-0fac-cf22d344038f',35433,20126,20099,'2019-12-17 16:48:51.088000','Preview-1000x0',35425,'image/jpeg',600,800,72496);
+INSERT INTO `AMImageEntry` VALUES ('cf42a330-e92e-701c-49e4-bf1ae95a2353',35434,20126,20099,'2019-12-17 16:48:51.310000','Thumbnail-300x300',35425,'image/jpeg',225,300,14699);
 /*!40000 ALTER TABLE `AMImageEntry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -511,6 +513,8 @@ INSERT INTO `AssetEntry` VALUES (35083,20126,20099,20139,'Test Test','2019-12-04
 INSERT INTO `AssetEntry` VALUES (35092,20126,20099,20139,'Test Test','2019-12-04 10:54:50.206000','2019-12-04 10:54:50.250000',20008,35090,'7cf246b1-b6d3-09da-b4cc-306223359d1d',0,1,1,NULL,NULL,'2019-12-04 10:54:50.206000',NULL,'application/octet-stream','manifest.xml2','','',NULL,NULL,0,0,0,0);
 INSERT INTO `AssetEntry` VALUES (35404,20126,20099,20139,'Test Test','2019-12-17 16:45:05.283000','2019-12-17 16:45:05.491000',20008,35402,'6f9f2cb9-4563-fb16-0fe8-a0b06b5703e4',0,1,1,NULL,NULL,'2019-12-17 16:45:05.283000',NULL,'image/jpeg','example.jpg','','',NULL,NULL,0,0,0,0);
 INSERT INTO `AssetEntry` VALUES (35415,20126,20099,20139,'Test Test','2019-12-17 16:46:45.853000','2019-12-17 16:46:45.908000',20008,35413,'30064c0f-9aea-c61a-d8e2-bfb44362f9d6',0,1,1,NULL,NULL,'2019-12-17 16:46:45.853000',NULL,'image/jpeg','test.jpg','','',NULL,NULL,0,0,0,0);
+INSERT INTO `AssetEntry` VALUES (35426,20126,20099,20139,'Test Test','2019-12-17 16:48:50.503000','2019-12-17 16:48:50.546000',20008,35424,'c36aa58d-b5c6-c1d4-3bff-d0fbc17951a0',0,1,1,NULL,NULL,'2019-12-17 16:48:50.503000',NULL,'image/jpeg','trees.jpg','','',NULL,NULL,0,0,0,0);
+INSERT INTO `AssetEntry` VALUES (35446,20126,20099,20139,'Test Test','2019-12-17 16:51:04.224000','2019-12-17 16:51:04.224000',20008,35444,'d40327cd-2f40-7115-044c-4aeccf03b56d',0,1,0,NULL,NULL,NULL,NULL,'application/zip','Public_Pages-20191217165102008.lar','','',NULL,NULL,0,0,0,0);
 /*!40000 ALTER TABLE `AssetEntry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -772,6 +776,7 @@ CREATE TABLE `BackgroundTask` (
 
 LOCK TABLES `BackgroundTask` WRITE;
 /*!40000 ALTER TABLE `BackgroundTask` DISABLE KEYS */;
+INSERT INTO `BackgroundTask` VALUES (2,35436,20126,20099,20139,'Test Test','2019-12-17 16:51:01.948000','2019-12-17 16:51:04.298000','Public Pages',NULL,'com.liferay.exportimport.internal.background.task.LayoutExportBackgroundTaskExecutor','{\"javaClass\":\"java.util.HashMap\",\"map\":{\"exportImportConfigurationId\":35435,\"threadLocalValues\":{\"javaClass\":\"java.util.HashMap\",\"map\":{\"defaultLocale\":{\"javaClass\":\"java.util.Locale\",\"locale\":{\"country\":\"US\",\"variant\":\"\",\"language\":\"en\"}},\"companyId\":20099,\"clusterInvoke\":true,\"groupId\":0,\"principalName\":\"20139\"}}}}',1,'2019-12-17 16:51:04.298000',3,'');
 /*!40000 ALTER TABLE `BackgroundTask` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1394,6 +1399,9 @@ INSERT INTO `ClassName_` VALUES (0,33606,'com.liferay.portal.repository.liferayr
 INSERT INTO `ClassName_` VALUES (0,33607,'com.liferay.portal.repository.temporaryrepository.TemporaryFileEntryRepository');
 INSERT INTO `ClassName_` VALUES (0,33612,'com.liferay.document.library.kernel.util.RawMetadataProcessor');
 INSERT INTO `ClassName_` VALUES (0,34885,'com.liferay.configuration.admin.web.internal.model.ConfigurationModel');
+INSERT INTO `ClassName_` VALUES (0,35437,'com.liferay.site.model.adapter.StagedGroup');
+INSERT INTO `ClassName_` VALUES (0,35438,'com.liferay.layout.set.model.adapter.StagedLayoutSet');
+INSERT INTO `ClassName_` VALUES (0,35439,'com.liferay.asset.kernel.model.adapter.StagedAssetLink');
 /*!40000 ALTER TABLE `ClassName_` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2112,6 +2120,7 @@ INSERT INTO `DDMContent` VALUES ('22654e91-7762-3beb-9f72-08b858988cb1',34895,20
 INSERT INTO `DDMContent` VALUES ('53280a90-81ae-bdbb-a690-de5782f11774',35087,20126,20099,20139,'Test Test','2019-12-04 10:51:25.340000','2019-12-04 10:51:25.340000','com.liferay.dynamic.data.mapping.model.DDMStorageLink',NULL,'{\"availableLanguageIds\":[\"en_US\"],\"defaultLanguageId\":\"en_US\",\"fieldValues\":[{\"instanceId\":\"hZdu3zuj\",\"name\":\"HttpHeaders_CONTENT_TYPE\",\"value\":\"application/xml\"}]}');
 INSERT INTO `DDMContent` VALUES ('5fcbdecc-012b-3724-99c5-76c917bfcc06',35408,20126,20099,20139,'Test Test','2019-12-17 16:45:06.744000','2019-12-17 16:45:06.744000','com.liferay.dynamic.data.mapping.model.DDMStorageLink',NULL,'{\"availableLanguageIds\":[\"en_US\"],\"defaultLanguageId\":\"en_US\",\"fieldValues\":[{\"instanceId\":\"rx7xZqav\",\"name\":\"HttpHeaders_CONTENT_TYPE\",\"value\":\"image/jpeg\"},{\"instanceId\":\"urlYuAzD\",\"name\":\"TIFF_BITS_PER_SAMPLE\",\"value\":\"8\"},{\"instanceId\":\"B6osXhXV\",\"name\":\"TIFF_IMAGE_LENGTH\",\"value\":\"600\"},{\"instanceId\":\"UdERJkc8\",\"name\":\"TIFF_IMAGE_WIDTH\",\"value\":\"800\"}]}');
 INSERT INTO `DDMContent` VALUES ('ca5ee2ab-5a87-66e1-986d-7cb7dc62a360',35419,20126,20099,20139,'Test Test','2019-12-17 16:46:46.087000','2019-12-17 16:46:46.087000','com.liferay.dynamic.data.mapping.model.DDMStorageLink',NULL,'{\"availableLanguageIds\":[\"en_US\"],\"defaultLanguageId\":\"en_US\",\"fieldValues\":[{\"instanceId\":\"BHFhAuaJ\",\"name\":\"HttpHeaders_CONTENT_TYPE\",\"value\":\"image/jpeg\"},{\"instanceId\":\"UUbk9SK0\",\"name\":\"TIFF_BITS_PER_SAMPLE\",\"value\":\"8\"},{\"instanceId\":\"yhRqrcZ2\",\"name\":\"TIFF_IMAGE_LENGTH\",\"value\":\"600\"},{\"instanceId\":\"MdTOqi6q\",\"name\":\"TIFF_IMAGE_WIDTH\",\"value\":\"800\"}]}');
+INSERT INTO `DDMContent` VALUES ('510cd1da-5c2a-b1be-7a9e-d4faeda286c8',35430,20126,20099,20139,'Test Test','2019-12-17 16:48:50.698000','2019-12-17 16:48:50.698000','com.liferay.dynamic.data.mapping.model.DDMStorageLink',NULL,'{\"availableLanguageIds\":[\"en_US\"],\"defaultLanguageId\":\"en_US\",\"fieldValues\":[{\"instanceId\":\"1cSG7LUX\",\"name\":\"HttpHeaders_CONTENT_TYPE\",\"value\":\"image/jpeg\"},{\"instanceId\":\"968V2CO5\",\"name\":\"TIFF_BITS_PER_SAMPLE\",\"value\":\"8\"},{\"instanceId\":\"VhpUFrYk\",\"name\":\"TIFF_IMAGE_LENGTH\",\"value\":\"600\"},{\"instanceId\":\"Q6O4LJLW\",\"name\":\"TIFF_IMAGE_WIDTH\",\"value\":\"800\"}]}');
 /*!40000 ALTER TABLE `DDMContent` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2379,6 +2388,7 @@ INSERT INTO `DDMStorageLink` VALUES ('ceba952d-e2b1-fc64-d3c4-14fe820db3f2',3489
 INSERT INTO `DDMStorageLink` VALUES ('aa63b59d-5a58-3076-f951-14239ae3d701',35088,20099,29201,35087,0,33666);
 INSERT INTO `DDMStorageLink` VALUES ('4a740047-028a-8189-a3a7-ccf8193d2f8b',35410,20099,29201,35408,0,33666);
 INSERT INTO `DDMStorageLink` VALUES ('4e02bdcc-0ba7-fdaa-fc00-63641020e434',35420,20099,29201,35419,0,33666);
+INSERT INTO `DDMStorageLink` VALUES ('863e3661-e3ce-8429-14ec-9bf871019cb7',35431,20099,29201,35430,0,33666);
 /*!40000 ALTER TABLE `DDMStorageLink` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2545,6 +2555,7 @@ INSERT INTO `DDMStructureLink` VALUES (34897,20099,20021,34894,33665);
 INSERT INTO `DDMStructureLink` VALUES (35089,20099,20021,35086,33665);
 INSERT INTO `DDMStructureLink` VALUES (35411,20099,20021,35407,33665);
 INSERT INTO `DDMStructureLink` VALUES (35421,20099,20021,35418,33665);
+INSERT INTO `DDMStructureLink` VALUES (35432,20099,20021,35429,33665);
 /*!40000 ALTER TABLE `DDMStructureLink` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2910,6 +2921,8 @@ INSERT INTO `DLFileEntry` VALUES ('2a6b651d-5f8d-21eb-ea68-d3f33e05eb87',35081,2
 INSERT INTO `DLFileEntry` VALUES ('7cf246b1-b6d3-09da-b4cc-306223359d1d',35090,20126,20099,20139,'Test Test','2019-12-04 10:54:50.206000','2019-12-04 10:54:50.249000',0,0,20126,0,'/','205','manifest.xml2','xml2','application/octet-stream','manifest.xml2',NULL,'',0,'1.0',0,0,0,0,0,0,0,NULL);
 INSERT INTO `DLFileEntry` VALUES ('6f9f2cb9-4563-fb16-0fe8-a0b06b5703e4',35402,20126,20099,20139,'Test Test','2019-12-17 16:45:05.283000','2019-12-17 16:45:05.475000',0,0,20126,34907,'/34907/','301','example.jpg','jpg','image/jpeg','example.jpg',NULL,'',0,'1.0',153042,0,0,0,0,0,0,NULL);
 INSERT INTO `DLFileEntry` VALUES ('30064c0f-9aea-c61a-d8e2-bfb44362f9d6',35413,20126,20099,20139,'Test Test','2019-12-17 16:46:45.853000','2019-12-17 16:46:45.906000',0,0,20126,34907,'/34907/','302','test.jpg','jpg','image/jpeg','test.jpg',NULL,'',0,'1.0',153042,0,0,0,0,0,0,NULL);
+INSERT INTO `DLFileEntry` VALUES ('c36aa58d-b5c6-c1d4-3bff-d0fbc17951a0',35424,20126,20099,20139,'Test Test','2019-12-17 16:48:50.503000','2019-12-17 16:48:50.545000',0,0,20126,34907,'/34907/','303','trees.jpg','jpg','image/jpeg','trees.jpg',NULL,'',0,'1.0',153042,0,0,0,0,0,0,NULL);
+INSERT INTO `DLFileEntry` VALUES ('d40327cd-2f40-7115-044c-4aeccf03b56d',35444,20126,20099,20139,'Test Test','2019-12-17 16:51:04.224000','2019-12-17 16:51:04.241000',30401,35436,35441,35443,'/35442/35443/','304','Public_Pages-20191217165102008.lar','lar','application/zip','Public_Pages-20191217165102008.lar',NULL,'',0,'1.0',1426462,0,0,0,0,0,0,NULL);
 /*!40000 ALTER TABLE `DLFileEntry` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2946,6 +2959,7 @@ INSERT INTO `DLFileEntryMetadata` VALUES ('7647bd54-1c69-81e1-1f13-2b2a534df405'
 INSERT INTO `DLFileEntryMetadata` VALUES ('0c730e9b-09b3-db29-e0b8-848e6703c70f',35086,20099,35087,33665,35081,35082);
 INSERT INTO `DLFileEntryMetadata` VALUES ('ba1648b1-9efc-7b78-c8e2-bda6a4ad4163',35407,20099,35408,33665,35402,35403);
 INSERT INTO `DLFileEntryMetadata` VALUES ('58c6719d-dacb-419d-1452-4808c0a3b8f2',35418,20099,35419,33665,35413,35414);
+INSERT INTO `DLFileEntryMetadata` VALUES ('2c3a2ebb-a7be-3e69-fddf-92641c280c49',35429,20099,35430,33665,35424,35425);
 /*!40000 ALTER TABLE `DLFileEntryMetadata` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3153,6 +3167,8 @@ INSERT INTO `DLFileVersion` VALUES ('8ad867e2-61f1-ba87-1bc0-72e3934c5623',35082
 INSERT INTO `DLFileVersion` VALUES ('fe8b9626-c74b-03fe-1c08-eed120212517',35091,20126,20099,20139,'Test Test','2019-12-04 10:54:50.227000','2019-12-04 10:54:50.249000',20126,0,35090,'/','manifest.xml2','xml2','application/octet-stream','manifest.xml2',NULL,NULL,'',0,'1.0',0,NULL,NULL,0,20139,'Test Test','2019-12-04 10:54:50.249000');
 INSERT INTO `DLFileVersion` VALUES ('f0089159-d5fa-9e0d-36a3-c36e88de8bcd',35403,20126,20099,20139,'Test Test','2019-12-17 16:45:05.377000','2019-12-17 16:45:05.475000',20126,34907,35402,'/34907/','example.jpg','jpg','image/jpeg','example.jpg',NULL,NULL,'',0,'1.0',153042,NULL,NULL,0,20139,'Test Test','2019-12-17 16:45:05.475000');
 INSERT INTO `DLFileVersion` VALUES ('d7d3fae2-fa53-9ed9-330f-c6cb5361a984',35414,20126,20099,20139,'Test Test','2019-12-17 16:46:45.866000','2019-12-17 16:46:45.906000',20126,34907,35413,'/34907/','test.jpg','jpg','image/jpeg','test.jpg',NULL,NULL,'',0,'1.0',153042,NULL,NULL,0,20139,'Test Test','2019-12-17 16:46:45.906000');
+INSERT INTO `DLFileVersion` VALUES ('b34d2643-a24f-55c7-1bb9-f89de11a5004',35425,20126,20099,20139,'Test Test','2019-12-17 16:48:50.527000','2019-12-17 16:48:50.545000',20126,34907,35424,'/34907/','trees.jpg','jpg','image/jpeg','trees.jpg',NULL,NULL,'',0,'1.0',153042,NULL,NULL,0,20139,'Test Test','2019-12-17 16:48:50.545000');
+INSERT INTO `DLFileVersion` VALUES ('9881c3b2-f069-69f2-1393-f2c5aba015c5',35445,20126,20099,20139,'Test Test','2019-12-17 16:51:04.229000','2019-12-17 16:51:04.241000',35441,35443,35444,'/35442/35443/','Public_Pages-20191217165102008.lar','lar','application/zip','Public_Pages-20191217165102008.lar',NULL,NULL,'',0,'1.0',1426462,NULL,NULL,0,20139,'Test Test','2019-12-17 16:51:04.241000');
 /*!40000 ALTER TABLE `DLFileVersion` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3216,7 +3232,9 @@ INSERT INTO `DLFolder` VALUES ('9dc88ce5-e191-b115-fc9d-89cd16290b42',34524,2012
 INSERT INTO `DLFolder` VALUES ('0a15f74b-770a-a60b-49d3-65a06b552979',34537,20126,20099,20139,'Test Test','2019-10-30 09:09:59.609000','2019-10-30 09:09:59.609000',33998,0,33999,'/33999/34537/','34536',NULL,'2019-10-30 09:09:59.607000',0,0,0,NULL,0,0,NULL,NULL);
 INSERT INTO `DLFolder` VALUES ('5fb12e17-34b0-cf08-a015-685809e90f4f',34723,20126,20099,20139,'Test Test','2019-11-11 09:02:23.832000','2019-11-11 09:06:01.974000',20126,0,0,'/34723/','Folder01','Folder01','2019-11-11 09:02:23.810000',0,0,0,NULL,0,0,NULL,NULL);
 INSERT INTO `DLFolder` VALUES ('24580da3-9aea-a47b-c241-b6ba1b00de66',34886,20126,20099,20139,'Test Test','2019-11-28 11:43:46.373000','2019-11-28 11:43:46.373000',20126,0,0,'/34886/','Sooraj content',NULL,'2019-11-28 11:44:10.205000',0,0,0,NULL,0,0,NULL,NULL);
-INSERT INTO `DLFolder` VALUES ('673b830d-bbd5-2fc2-0665-61c56dcc2dde',34907,20126,20099,20139,'Test Test','2019-11-28 12:42:29.454000','2019-11-28 12:42:29.454000',20126,0,0,'/34907/','Folder 92',NULL,'2019-12-17 16:46:45.853000',0,0,0,NULL,0,0,NULL,NULL);
+INSERT INTO `DLFolder` VALUES ('673b830d-bbd5-2fc2-0665-61c56dcc2dde',34907,20126,20099,20139,'Test Test','2019-11-28 12:42:29.454000','2019-11-28 12:42:29.454000',20126,0,0,'/34907/','Folder 92',NULL,'2019-12-17 16:48:50.503000',0,0,0,NULL,0,0,NULL,NULL);
+INSERT INTO `DLFolder` VALUES ('26b86b44-a8df-8df2-89fc-a31ee01241b6',35442,20126,20099,20103,NULL,'2019-12-17 16:51:04.161000','2019-12-17 16:51:04.161000',35441,1,0,'/35442/','189',NULL,'2019-12-17 16:51:04.214000',0,1,0,NULL,0,0,NULL,NULL);
+INSERT INTO `DLFolder` VALUES ('1a69a0bd-42e6-ad22-386d-b5b84378bb58',35443,20126,20099,20139,'Test Test','2019-12-17 16:51:04.215000','2019-12-17 16:51:04.215000',35441,0,35442,'/35442/35443/','35436',NULL,'2019-12-17 16:51:04.224000',0,0,0,NULL,0,0,NULL,NULL);
 /*!40000 ALTER TABLE `DLFolder` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3254,6 +3272,7 @@ INSERT INTO `DLSyncEvent` VALUES (35084,20099,1575456684879,'add','file',35081);
 INSERT INTO `DLSyncEvent` VALUES (35093,20099,1575456890262,'add','file',35090);
 INSERT INTO `DLSyncEvent` VALUES (35405,20099,1576601105559,'add','file',35402);
 INSERT INTO `DLSyncEvent` VALUES (35416,20099,1576601205921,'add','file',35413);
+INSERT INTO `DLSyncEvent` VALUES (35427,20099,1576601330555,'add','file',35424);
 /*!40000 ALTER TABLE `DLSyncEvent` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -3457,6 +3476,7 @@ CREATE TABLE `ExportImportConfiguration` (
 
 LOCK TABLES `ExportImportConfiguration` WRITE;
 /*!40000 ALTER TABLE `ExportImportConfiguration` DISABLE KEYS */;
+INSERT INTO `ExportImportConfiguration` VALUES (0,35435,20126,20099,20139,'Test Test','2019-12-17 16:51:01.868000','2019-12-17 16:51:01.868000','Public Pages',NULL,0,'{\"javaClass\":\"java.util.HashMap\",\"map\":{\"timezone\":{\"javaClass\":\"sun.util.calendar.ZoneInfo\",\"serializable\":{\"dstSavings\":0,\"offsets\":null,\"simpleTimeZoneParams\":null,\"rawOffset\":0,\"rawOffsetDiff\":0,\"checksum\":0,\"ID\":\"UTC\",\"transitions\":null,\"willGMTOffsetChange\":false}},\"locale\":{\"javaClass\":\"java.util.Locale\",\"locale\":{\"country\":\"US\",\"variant\":\"\",\"language\":\"en\"}},\"privateLayout\":false,\"parameterMap\":{\"javaClass\":\"java.util.HashMap\",\"map\":{\"PERMISSIONS\":[\"false\"],\"endDate\":[\"12/17/2019\"],\"_journal_web-content\":[\"true\"],\"groupId\":[\"20126\"],\"_journal_templates\":[\"true\"],\"LOGO\":[\"false\"],\"mvcRenderCommandName\":[\"exportLayouts\"],\"checkboxNames\":[\"THEME_REFERENCE,LOGO,LAYOUT_SET_SETTINGS,LAYOUT_SET_PROTOTYPE_SETTINGS,PORTLET_DATA_com_liferay_document_library_web_portlet_DLAdminPortlet,_document_library_folders,_document_library_documents,_document_library_previews-and-thumbnails,PORTLET_DATA_com_liferay_journal_web_portlet_JournalPortlet,_journal_web-content,_journal_referenced-content,_journal_version-history,_journal_structures,_journal_templates,PORTLET_DATA_com_liferay_calendar_web_portlet_CalendarPortlet,_calendar_calendars,_calendar_calendar-resources,PORTLET_DATA_com_liferay_asset_categories_admin_web_portlet_AssetCategoriesAdminPortlet,_asset_category_vocabularies,DELETIONS,PERMISSIONS\"],\"_journal_referenced-content-behavior\":[\"include-always\"],\"_document_library_folders\":[\"true\"],\"endDateMinute\":[\"50\"],\"endDateHour\":[\"4\"],\"LAYOUT_SET_SETTINGS\":[\"false\"],\"javax.portlet.action\":[\"exportLayouts\"],\"endDateAmPm\":[\"1\"],\"PORTLET_DATA_com_liferay_journal_web_portlet_JournalPortlet\":[\"false\"],\"last\":[\"12\"],\"_asset_category_vocabularies\":[\"true\"],\"endDateDay\":[\"17\"],\"formDate\":[\"1576601432462\"],\"PORTLET_DATA_CONTROL_DEFAULT\":[\"true\"],\"privateLayout\":[\"false\"],\"endDateTime\":[\"Tue Dec 17 16:50:39 GMT 2019\"],\"treeId\":[\"layoutsExportTree20126false\"],\"name\":[\"\"],\"endDateYear\":[\"2019\"],\"cmd\":[\"export\"],\"PORTLET_SETUP_ALL\":[\"true\"],\"startDateMonth\":[\"11\"],\"startDate\":[\"12/16/2019\"],\"startDateMinute\":[\"50\"],\"PORTLET_DATA\":[\"true\"],\"rootNodeName\":[\"Public Pages\"],\"range\":[\"all\"],\"startDateDay\":[\"16\"],\"_calendar_calendars\":[\"true\"],\"PORTLET_ARCHIVED_SETUPS_ALL\":[\"true\"],\"PORTLET_DATA_com_liferay_calendar_web_portlet_CalendarPortlet\":[\"false\"],\"PORTLET_CONFIGURATION_ALL\":[\"true\"],\"startTime\":[\"04:50 PM\"],\"liveGroupId\":[\"20126\"],\"exportImportConfigurationId\":[\"0\"],\"_document_library_documents\":[\"true\"],\"startDateHour\":[\"4\"],\"_journal_version-history\":[\"true\"],\"redirect\":[\"http://localhost:8080/group/guest/~/control_panel/manage?p_p_id=com_liferay_exportimport_web_portlet_ExportPortlet&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_com_liferay_exportimport_web_portlet_ExportPortlet_mvcRenderCommandName=exportLayoutsView&_com_liferay_exportimport_web_portlet_ExportPortlet_groupId=20126&_com_liferay_exportimport_web_portlet_ExportPortlet_liveGroupId=20126&_com_liferay_exportimport_web_portlet_ExportPortlet_privateLayout=false&_com_liferay_exportimport_web_portlet_ExportPortlet_displayStyle=descriptive&p_p_auth=kYt7Sa3r\"],\"THEME_REFERENCE\":[\"false\"],\"exportLAR\":[\"true\"],\"PORTLET_DATA_com_liferay_asset_categories_admin_web_portlet_AssetCategoriesAdminPortlet\":[\"false\"],\"_journal_referenced-content\":[\"true\"],\"_calendar_calendar-resources\":[\"true\"],\"_document_library_previews-and-thumbnails\":[\"true\"],\"startDateTime\":[\"Mon Dec 16 16:50:39 GMT 2019\"],\"_journal_structures\":[\"true\"],\"PORTLET_USER_PREFERENCES_ALL\":[\"true\"],\"endTime\":[\"04:50 PM\"],\"startDateYear\":[\"2019\"],\"PORTLET_DATA_com_liferay_document_library_web_portlet_DLAdminPortlet\":[\"true\"],\"DELETIONS\":[\"false\"],\"startDateAmPm\":[\"1\"],\"endDateMonth\":[\"11\"],\"LAYOUT_SET_PROTOTYPE_SETTINGS\":[\"false\"]}},\"userId\":20139,\"sourceGroupId\":20126}}',2,20139,'test','2019-12-17 16:51:01.863000');
 /*!40000 ALTER TABLE `ExportImportConfiguration` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -8053,7 +8073,7 @@ LOCK TABLES `PortalPreferences` WRITE;
 INSERT INTO `PortalPreferences` VALUES (0,20100,20099,1,'<portlet-preferences />');
 INSERT INTO `PortalPreferences` VALUES (0,20140,0,1,'<portlet-preferences />');
 INSERT INTO `PortalPreferences` VALUES (0,33856,20103,4,'<portlet-preferences />');
-INSERT INTO `PortalPreferences` VALUES (34,33867,20139,4,'<portlet-preferences><preference><name>com.liferay.portal.kernel.util.SessionClicks#_com_liferay_document_library_web_portlet_DLAdminPortlet_related-assets</name><value>0</value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#templateDetailsSectionPanel</name><value>0</value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#_com_liferay_document_library_web_portlet_DLAdminPortlet_categorization</name><value>1</value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#com.liferay.product.navigation.product.menu.web_productMenuState</name><value>open</value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#com.liferay.site.util_recentGroups</name><value>20126</value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#com.liferay.product.navigation.control.menu.web_addPanelTab</name><value></value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#structureAndTemplate</name><value>0</value></preference></portlet-preferences>');
+INSERT INTO `PortalPreferences` VALUES (40,33867,20139,4,'<portlet-preferences><preference><name>com.liferay.portal.kernel.util.SessionClicks#_com_liferay_document_library_web_portlet_DLAdminPortlet_related-assets</name><value>0</value></preference><preference><name>com.liferay.taglib.ui.util.SessionTreeJSClicks#layoutsExportTree20126falseSelectedNodePlid</name><value>[]</value></preference><preference><name>com.liferay.taglib.ui.util.SessionTreeJSClicks#layoutsExportTree20126falseSelectedNode</name><value></value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#templateDetailsSectionPanel</name><value>0</value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#_com_liferay_document_library_web_portlet_DLAdminPortlet_categorization</name><value>1</value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#com.liferay.product.navigation.product.menu.web_productMenuState</name><value>open</value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#com.liferay.site.util_recentGroups</name><value>20126</value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#com.liferay.product.navigation.control.menu.web_addPanelTab</name><value></value></preference><preference><name>com.liferay.portal.kernel.util.SessionClicks#structureAndTemplate</name><value>0</value></preference></portlet-preferences>');
 /*!40000 ALTER TABLE `PortalPreferences` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -9518,6 +9538,7 @@ LOCK TABLES `Repository` WRITE;
 /*!40000 ALTER TABLE `Repository` DISABLE KEYS */;
 INSERT INTO `Repository` VALUES (0,'3f8dd8e1-270a-f45b-efad-0b369b4f7d24',33604,20135,20099,20103,NULL,'2019-10-29 11:38:10.773000','2019-10-29 11:38:10.773000',33603,'com.liferay.oauth2.provider',NULL,'com.liferay.oauth2.provider','',33605,NULL);
 INSERT INTO `Repository` VALUES (0,'51e22fb9-ca8f-99fb-232c-80bc2940a258',33998,20126,20099,20103,NULL,'2019-10-29 12:20:01.438000','2019-10-29 12:20:01.438000',33603,'com.liferay.journal',NULL,'com.liferay.journal','',33999,NULL);
+INSERT INTO `Repository` VALUES (0,'bcf37384-4361-90be-314b-78d0a5a6ee31',35441,20126,20099,20103,NULL,'2019-12-17 16:51:04.184000','2019-12-17 16:51:04.184000',33603,'189',NULL,'189','',35442,NULL);
 /*!40000 ALTER TABLE `Repository` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12358,6 +12379,18 @@ INSERT INTO `ResourcePermission` VALUES (0,2203,20099,'com.liferay.document.libr
 INSERT INTO `ResourcePermission` VALUES (0,2204,20099,'com.liferay.document.library.kernel.model.DLFileEntry',4,'35413',35413,20107,20139,255,1);
 INSERT INTO `ResourcePermission` VALUES (0,2205,20099,'com.liferay.document.library.kernel.model.DLFileEntry',4,'35413',35413,20114,0,129,1);
 INSERT INTO `ResourcePermission` VALUES (0,2206,20099,'com.liferay.document.library.kernel.model.DLFileEntry',4,'35413',35413,20106,0,129,1);
+INSERT INTO `ResourcePermission` VALUES (0,2207,20099,'com.liferay.document.library.kernel.model.DLFileEntry',4,'35424',35424,20107,20139,255,1);
+INSERT INTO `ResourcePermission` VALUES (0,2208,20099,'com.liferay.document.library.kernel.model.DLFileEntry',4,'35424',35424,20114,0,129,1);
+INSERT INTO `ResourcePermission` VALUES (0,2209,20099,'com.liferay.document.library.kernel.model.DLFileEntry',4,'35424',35424,20106,0,129,1);
+INSERT INTO `ResourcePermission` VALUES (0,2210,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'35442',35442,20107,20103,511,1);
+INSERT INTO `ResourcePermission` VALUES (0,2211,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'35442',35442,20114,0,217,1);
+INSERT INTO `ResourcePermission` VALUES (0,2212,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'35442',35442,20106,0,1,1);
+INSERT INTO `ResourcePermission` VALUES (0,2213,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'35443',35443,20107,20139,511,1);
+INSERT INTO `ResourcePermission` VALUES (0,2214,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'35443',35443,20114,0,217,1);
+INSERT INTO `ResourcePermission` VALUES (0,2215,20099,'com.liferay.document.library.kernel.model.DLFolder',4,'35443',35443,20106,0,1,1);
+INSERT INTO `ResourcePermission` VALUES (0,2216,20099,'com.liferay.document.library.kernel.model.DLFileEntry',4,'35444',35444,20107,20139,255,1);
+INSERT INTO `ResourcePermission` VALUES (0,2217,20099,'com.liferay.document.library.kernel.model.DLFileEntry',4,'35444',35444,20114,0,129,1);
+INSERT INTO `ResourcePermission` VALUES (0,2218,20099,'com.liferay.document.library.kernel.model.DLFileEntry',4,'35444',35444,20106,0,129,1);
 /*!40000 ALTER TABLE `ResourcePermission` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12727,6 +12760,7 @@ INSERT INTO `SocialActivity` VALUES (401,20126,20099,20139,1575456684684,35085,0
 INSERT INTO `SocialActivity` VALUES (402,20126,20099,20139,1575456890227,35094,0,20008,35090,0,0,1,'{\"title\":\"manifest.xml2\"}',0);
 INSERT INTO `SocialActivity` VALUES (501,20126,20099,20139,1576601105377,35406,0,20008,35402,0,0,1,'{\"title\":\"example.jpg\"}',0);
 INSERT INTO `SocialActivity` VALUES (502,20126,20099,20139,1576601205866,35417,0,20008,35413,0,0,1,'{\"title\":\"test.jpg\"}',0);
+INSERT INTO `SocialActivity` VALUES (503,20126,20099,20139,1576601330527,35428,0,20008,35424,0,0,1,'{\"title\":\"trees.jpg\"}',0);
 /*!40000 ALTER TABLE `SocialActivity` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -12876,6 +12910,7 @@ INSERT INTO `SocialActivitySet` VALUES (35085,20126,20099,20139,1575456684684,15
 INSERT INTO `SocialActivitySet` VALUES (35094,20126,20099,20139,1575456890227,1575456890227,20008,35090,1,NULL,1);
 INSERT INTO `SocialActivitySet` VALUES (35406,20126,20099,20139,1576601105377,1576601105377,20008,35402,1,NULL,1);
 INSERT INTO `SocialActivitySet` VALUES (35417,20126,20099,20139,1576601205866,1576601205866,20008,35413,1,NULL,1);
+INSERT INTO `SocialActivitySet` VALUES (35428,20126,20099,20139,1576601330527,1576601330527,20008,35424,1,NULL,1);
 /*!40000 ALTER TABLE `SocialActivitySet` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -13419,6 +13454,7 @@ CREATE TABLE `UserNotificationEvent` (
 
 LOCK TABLES `UserNotificationEvent` WRITE;
 /*!40000 ALTER TABLE `UserNotificationEvent` DISABLE KEYS */;
+INSERT INTO `UserNotificationEvent` VALUES (0,'218a406c-f9fd-cb7d-7312-974abce68062',35440,20099,20139,'com_liferay_exportimport_web_portlet_ExportImportPortlet',1576601464128,10002,0,1,'{\"backgroundTaskId\":\"35436\",\"exportImportConfigurationId\":\"35435\",\"status\":3}',0,0);
 /*!40000 ALTER TABLE `UserNotificationEvent` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -14019,4 +14055,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-17 17:48:00
+-- Dump completed on 2019-12-17 17:51:24
